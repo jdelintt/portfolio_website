@@ -1,24 +1,75 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'antd/dist/antd.css';
+import { Menu } from 'antd';
+import { Layout } from 'antd';
+import { MailOutlined } from '@ant-design/icons';
 
 function App() {
+  const { Header, Footer, Sider, Content } = Layout;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with Jesus DeLintt
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout style={{backgroundColor: "#b5f5ec"}}>
+        <Sider style={{backgroundColor: "#b5f5ec"}}>
+          <Menu style={{backgroundColor: "#b5f5ec"}}>
+              <Menu.Item icon={<MailOutlined />}>
+
+              </Menu.Item>
+              <Menu.Item>
+                
+              </Menu.Item>
+              <Menu.Item>
+                
+              </Menu.Item>
+          </Menu>
+        </Sider>
+        <Layout style={{backgroundColor: "#b5f5ec"}}>
+          <Header style={{backgroundColor: "#b5f5ec"}}>
+            <Menu mode="horizontal" style={{backgroundColor: "#b5f5ec"}}>
+                <Menu.Item>
+                  Home
+                </Menu.Item>
+                <Menu.Item>
+                  Projects
+                </Menu.Item>
+                <Menu.Item>
+                  Resume
+                </Menu.Item>
+                <Menu.Item>
+                  About
+                </Menu.Item>
+                <Menu.Item>
+                  Contact
+                </Menu.Item>
+              </Menu>
+          </Header>
+          <Content style={{marginBottom: '150px'}}>
+            <div>
+                <h1>
+                  Welcome everyone to my personal portfolio site!
+                </h1>
+                <h2>
+                  I am looking to grow my skills in software engineering and data science. Check out my experience and recent projects in
+                  both fields
+                </h2>
+            </div>
+          </Content >
+          <Footer style={{backgroundColor: "#b5f5ec"}}>
+            <Menu style={{backgroundColor: "#b5f5ec"}}>
+                <Menu.Item icon={<MailOutlined />}>
+
+                </Menu.Item>
+                <Menu.Item>
+                  
+                </Menu.Item>
+                <Menu.Item>
+                  
+                </Menu.Item>
+              </Menu>
+          </Footer>
+        </Layout>
+      </Layout>
+    </>
   );
 }
 
