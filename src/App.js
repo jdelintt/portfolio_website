@@ -33,7 +33,7 @@ function App() {
                 </Menu.Item>
               </Menu>
           </Header>
-          <Content style={{marginBottom: '118px', marginTop: '40px'}}>
+          <Content style={{marginBottom: '565px', marginTop: '40px'}}>
             <Row>
               <Col span={6}>
               
