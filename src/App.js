@@ -2,7 +2,7 @@
 import './App.css';
 import 'antd/dist/antd.css';
 import { Menu, Layout, Row, Col } from 'antd';
-import { MailOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
 import Icon from './Figma'
 
 
@@ -10,42 +10,58 @@ function App() {
   const { Header, Footer, Content } = Layout;
   return (
     <>
-        <Layout style={{backgroundColor: "#b5f5ec"}}>
-          <Header style={{backgroundColor: "#b5f5ec"}}>
-            <Menu mode="horizontal" style={{backgroundColor: "#b5f5ec"}}>
-                <Menu.Item icon={<Icon/>} style={{marginTop: '3px', marginRight: '20px'}}>
-                </Menu.Item>
-
-                <Menu.Item>
-                  Home
-                </Menu.Item>
-                <Menu.Item>
-                  Projects
-                </Menu.Item>
-                <Menu.Item>
-                  Resume
-                </Menu.Item>
-                <Menu.Item>
-                  About
-                </Menu.Item>
-                <Menu.Item>
-                  Contact
-                </Menu.Item>
-              </Menu>
+        <Layout style={{backgroundColor: "#ff9c6e"}}>
+          <Header style={{backgroundColor: "#ff9c6e", marginTop: '10px'}}>
+            <Row>
+              <Col span={4}>
+                <Icon>
+                </Icon>
+              </Col>
+              <Col span={10}>
+              </Col>
+              <Col span={10}>
+                <Menu mode="horizontal" style={{backgroundColor: "#ff9c6e", borderBottom: 'none'}}>
+                  <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    Home
+                  </Menu.Item>
+                  <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    Projects
+                  </Menu.Item>
+                  <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    Resume
+                  </Menu.Item >
+                  <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    About
+                  </Menu.Item>
+                  <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    Contact
+                  </Menu.Item>
+                </Menu>
+              </Col>
+            </Row>
           </Header>
-          <Content style={{marginBottom: '565px', marginTop: '40px'}}>
+          <Content style={{marginBottom: '280px', marginTop: '40px'}}>
             <Row>
               <Col span={6}>
               
               </Col>
               <Col span={10}>
               <div>
-                  <h1>
-                    Welcome everyone to my personal portfolio site!
+                  <h1 style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    Welcome everyone to my personal portfolio site! My name is
                   </h1>
-                  <h2>
-                    I am looking to grow my skills in software engineering and data science. Check out my experience and recent projects in
-                    both fields
+                  <h1 style={{fontFamily: 'Acme', fontSize: '100px', letterSpacing: '4px', margin: '0px'}}>
+                    Jesus DeLintt
+                  </h1>
+                  <h2 style={{fontFamily: 'Acme', fontSize: '30px', fontWeight: 'bolder'}}>
+                    I am looking to grow my skills in software engineering and data science.
+                  </h2>
+                  <h2 style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    I have experience in React.js, Node.js, Python, data visualization, Pandas
+                    and
+                  </h2>
+                  <h2 style={{fontFamily: 'Acme', fontSize: '20px'}}>
+                    I'm ready to learn more!
                   </h2>
                 </div>
               </Col>
@@ -56,18 +72,18 @@ function App() {
 
 
           </Content >
-          <Footer style={{backgroundColor: "#b5f5ec"}}>  
+          <Footer style={{backgroundColor: "#ff9c6e", marginBottom: '15px'}}>  
           <Row>
             <Col span={6}>
             </Col>
             <Col span={6} style={{alignContent: 'center', justifyContent: 'center'}}>
-            <MailOutlined /> 
+            <LinkedinOutlined style={{fontSize: '45px'}} /> 
             </Col>
             <Col span={6}>
-            <MailOutlined /> 
+            <GithubOutlined style={{fontSize: '45px'}} /> 
             </Col>
             <Col span={6}>
-            <MailOutlined />   
+            <MailOutlined style={{fontSize: '45px'}} />   
             </Col>
           </Row>
           </Footer>

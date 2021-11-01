@@ -3,31 +3,26 @@ import * as React from "react";
 function Icon(props) {
   return (
     <svg
-      width={59}
-      height={57}
+      width={99}
+      height={87}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g filter="url(#prefix__filter0_ddi_2:6)">
+      <path fill="#FF9C6E" stroke="#000" strokeWidth={4} d="M2 2h95v83H2z" />
+      <g filter="url(#prefix__filter0_d_12:9)">
         <path
-          d="M4 8.863c19.579-11.847 30.748-11.788 51 0l-7.244 33.305L29.5 49l-17.386-6.832L4 8.863z"
-          fill="#FADB14"
-        />
-      </g>
-      <g filter="url(#prefix__filter1_d_2:6)">
-        <path
-          d="M20.048 18.337h2.862l-1.67 9.844a5.493 5.493 0 01-.899 2.412 4.812 4.812 0 01-1.855 1.631c-.756.378-1.586.557-2.49.537-1.342-.026-2.377-.423-3.106-1.191-.73-.768-1.074-1.843-1.035-3.223l2.88.01c-.097 1.341.375 2.021 1.417 2.041a1.87 1.87 0 001.445-.566c.397-.398.654-.948.771-1.65l1.68-9.845zM34.325 30.76c-.507.645-1.253 1.143-2.236 1.495-.976.345-2.08.507-3.31.488-.97-.007-1.823-.218-2.559-.635-.736-.423-1.315-1.029-1.738-1.816-.424-.788-.664-1.687-.723-2.696-.065-.937.033-2.037.293-3.3.267-1.27.72-2.38 1.358-3.33.644-.958 1.416-1.67 2.314-2.14.898-.474 1.894-.702 2.988-.683 1.485.026 2.647.446 3.487 1.26.84.807 1.318 1.966 1.435 3.476l-2.754-.01c-.072-.794-.283-1.38-.635-1.757-.351-.378-.875-.58-1.572-.606-1.204-.039-2.155.492-2.851 1.592-.69 1.094-1.084 2.682-1.182 4.766-.065 1.113.104 1.976.508 2.588.41.612 1.032.924 1.865.937.97.026 1.797-.205 2.48-.693l.479-2.451h-2.598l.381-2.159h5.43l-.86 5.674zm1.924 1.797l2.471-14.218 4.082.01c.957.019 1.816.237 2.578.654a4.835 4.835 0 011.865 1.777c.476.775.762 1.647.86 2.617a8.637 8.637 0 01-.02 1.738l-.068.518c-.287 2.083-1.107 3.756-2.461 5.02-1.348 1.256-2.985 1.884-4.912 1.884h-4.395zm4.922-11.845l-1.65 9.492 1.191.01c1.315 0 2.37-.482 3.164-1.446.801-.963 1.26-2.418 1.377-4.365l.02-.313c.02-1.074-.186-1.897-.616-2.47-.43-.573-1.07-.873-1.923-.899l-1.563-.01z"
+          d="M44.379 36.207l-2.652 15.6c-.21 1.65-.807 2.934-1.791 3.855-.976.92-2.238 1.372-3.788 1.354a11.9 11.9 0 01-2.05-.26l.314-3.145c.456.1.852.16 1.19.178 1.212.018 1.95-.638 2.214-1.969l2.68-15.613h3.883zm-3.514-3.76c-.018-.601.173-1.098.575-1.49.4-.401.916-.61 1.544-.629.63 0 1.144.187 1.545.56.41.374.625.848.643 1.422.018.611-.173 1.117-.574 1.518-.401.392-.916.597-1.545.615a2.186 2.186 0 01-1.518-.52c-.428-.364-.651-.856-.67-1.476zm11.389 3.473c1.376.036 2.488.588 3.336 1.654L57.04 30h3.868l-3.636 21h-3.446l.219-1.586c-1.103 1.285-2.388 1.91-3.855 1.873-.921-.009-1.728-.25-2.42-.724-.693-.474-1.23-1.154-1.614-2.038-.373-.893-.578-1.886-.615-2.98a11.21 11.21 0 01.041-1.668l.082-.615c.219-1.513.638-2.844 1.258-3.992.629-1.149 1.394-2.001 2.297-2.557.911-.556 1.923-.82 3.035-.793zm-2.803 7.957c-.073.693-.096 1.276-.068 1.75.091 1.604.738 2.42 1.941 2.447 1.085.046 2.028-.465 2.83-1.531l1.053-5.879c-.355-.975-1.066-1.486-2.133-1.531-.939-.028-1.722.337-2.351 1.094-.62.747-1.044 1.964-1.272 3.65z"
           fill="#000"
         />
       </g>
       <defs>
         <filter
-          id="prefix__filter0_ddi_2:6"
-          x={0}
-          y={0}
-          width={59}
-          height={57}
+          id="prefix__filter0_d_12:9"
+          x={30.098}
+          y={30}
+          width={34.81}
+          height={35.043}
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
@@ -41,59 +36,10 @@ function Icon(props) {
           <feGaussianBlur stdDeviation={2} />
           <feComposite in2="hardAlpha" operator="out" />
           <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-          <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_2:6" />
-          <feColorMatrix
-            in="SourceAlpha"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy={4} />
-          <feGaussianBlur stdDeviation={2} />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-          <feBlend
-            in2="effect1_dropShadow_2:6"
-            result="effect2_dropShadow_2:6"
-          />
+          <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_12:9" />
           <feBlend
             in="SourceGraphic"
-            in2="effect2_dropShadow_2:6"
-            result="shape"
-          />
-          <feColorMatrix
-            in="SourceAlpha"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy={4} />
-          <feGaussianBlur stdDeviation={2} />
-          <feComposite in2="hardAlpha" operator="arithmetic" k2={-1} k3={1} />
-          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-          <feBlend in2="shape" result="effect3_innerShadow_2:6" />
-        </filter>
-        <filter
-          id="prefix__filter1_d_2:6"
-          x={7.796}
-          y={18.113}
-          width={44.387}
-          height={22.678}
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity={0} result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset dy={4} />
-          <feGaussianBlur stdDeviation={2} />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-          <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_2:6" />
-          <feBlend
-            in="SourceGraphic"
-            in2="effect1_dropShadow_2:6"
+            in2="effect1_dropShadow_12:9"
             result="shape"
           />
         </filter>
