@@ -37,7 +37,7 @@ function Header() {
           <Menu mode="horizontal" style={{backgroundColor: "#ff9c6e", borderBottom: 'none'}} selectedKeys={showComponent} onClick={(e) => 
         showComponent(e.key)}>
             <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
-              Home
+              Home for Jesus!
             </Menu.Item>
             <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}} key='data_science_projects'>
               Data Science Projects
