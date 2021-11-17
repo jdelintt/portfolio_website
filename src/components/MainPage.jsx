@@ -1,18 +1,31 @@
-
 import { Menu, Layout, Row, Col } from 'antd';
 import { LinkedinOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
 import Icon from '../Figma'
 import React, { useState } from 'react';
-import TestComponent from './TestComponent';
+import DataScience from './DataScience';
+
 
 
 function Header() {
     const { Header, Footer, Content } = Layout
     const [component, showComponent] = useState(0);
+    const [border, showBorder] = useState(0)
+    const borderStyle = (key) => {
+      switch (key) {
+        case 'home':
+          return ('none');
+        case 'data_science_projects':
+          return ('solid');
+        case 'item3':
+          return (<h3>item3</h3>);
+        default:
+          break;
+       }
+      };
     const componentsSwitch = (key) => {
         switch (key) {
-          case 'projects':
-            return (<TestComponent></TestComponent>);
+          case 'data_science_projects':
+            return (<DataScience></DataScience>);
           case 'item2':
             return (<h1>item2</h1>);
           case 'item3':
@@ -39,8 +52,8 @@ function Header() {
             <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
               Home
             </Menu.Item>
-            <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}} key='projects'>
-              Projects
+            <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}} key='data_science_projects'>
+              Data Science Projects
             </Menu.Item>
             <Menu.Item style={{fontFamily: 'Acme', fontSize: '20px'}}>
               Resume
@@ -84,10 +97,14 @@ function Header() {
               
               </Col>
             </Row>
-            <Row>
-              <div>
-              {componentsSwitch(component)}
-              </div>
+            <Row justify='center' type='flex' >
+              <Col span={6}>
+              </Col>
+              <Col span={12} justifyContent='center'>
+                {componentsSwitch(component)}
+                </Col>
+              <Col span={6}>
+              </Col>
             </Row>
           </Content >
           <Footer style={{backgroundColor: "#ff9c6e", marginBottom: '15px'}}>  
