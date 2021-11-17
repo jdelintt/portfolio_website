@@ -9,19 +9,6 @@ import DataScience from './DataScience';
 function Header() {
     const { Header, Footer, Content } = Layout
     const [component, showComponent] = useState(0);
-    const [border, showBorder] = useState(0)
-    const borderStyle = (key) => {
-      switch (key) {
-        case 'home':
-          return ('none');
-        case 'data_science_projects':
-          return ('solid');
-        case 'item3':
-          return (<h3>item3</h3>);
-        default:
-          break;
-       }
-      };
     const componentsSwitch = (key) => {
         switch (key) {
           case 'data_science_projects':
